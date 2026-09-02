@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyside6_dgp"
+version = "0.1.0"
+dependencies = [
+    "git_dgp @ git+https://github.com/davigopi/git_dgp.git@4959a527940065b6311bc64253aa1fbc21fe26f6",
+    "pandas==3.0.5",
+    "pipreqs==0.5.0",
+    "pyside6==6.11.2",
+    "pyside6_addons==6.11.2",
+    "pyside6_essentials==6.11.2",
+]
+
+[tool.setuptools]
+py-modules = ["pyside6_dgp"]
